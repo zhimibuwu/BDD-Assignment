@@ -70,6 +70,6 @@ You will be adding two functions to our calculator program: one that calculates 
 
 3. Run your tests using ```lettuce tests/features/calculator_volume.feature``` and ```lettuce tests/features/calculator_factorial.feature```. The tests should fail.
 
-4. In the app directory, open calculator.py and implement the volume and factorial functions.
+4. In the app directory, open calculator.py and finish implementing the volume and factorial functions.
 
 5. Run the two feature tests again. This time, they should pass.
