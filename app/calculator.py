@@ -1,3 +1,5 @@
+import math
+
 class Calculator(object):
     def add(self, x, y):
         number_types = (int, long, float, complex)
@@ -20,7 +22,10 @@ class Calculator(object):
         number_types = (int, long, float, complex)
         if isinstance(l, number_types) and isinstance(h, number_types) and isinstance(b, number_types):
             #TODO compute volume here
-            return 0
+            if l >= 0 and h >= 0 and b >= 0:
+                return l * h * b
+            else:
+                return None
         else:
             raise ValueError
 
@@ -33,7 +38,7 @@ class Calculator(object):
                 return None
             else:
                 #TODO compute factorial here
-                return 0
+                return math.factorial(n)
         else:
             raise ValueError
 
